@@ -8,7 +8,23 @@ public Genius(int maxLength)//initializes the array to store the queue in and it
         line = new Customer[maxLength];
         N = 0;
 }
-public boolean lineLength()
+public int findPlace(String name)
+{
+      for(int i = 1; i < line.length; i++)
+      {
+                if(line[i].returnName().equals(name))
+                        return i;
+      }
+      return -1;
+}
+public void changeProblem(String name, String problem)
+{
+        int place = findPlace(name);
+        if(place == -1)
+                throw new IllegalStateException("No person exists under that name."); 
+        line[place].changeProblem(problem);
+}
+public int lineLength()
 {
         return N;
 }
