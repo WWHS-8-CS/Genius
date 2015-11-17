@@ -8,6 +8,14 @@ public Genius(int maxLength)//initializes the array to store the queue in and it
         line = new Customer[maxLength];
         N = 0;
 }
+public boolean lineLength()
+{
+        return N;
+}
+public Styring peek()
+{
+        return line[0].toString();
+}
 public void enqueue(Customer person)
 {
         if(N >= line.length)
