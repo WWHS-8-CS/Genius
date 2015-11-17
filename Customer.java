@@ -25,4 +25,8 @@ public class Customer extends Genius{
 	{
 		this.problem = problem;
 	}
+	public void toString()
+	{
+		System.our.println("Name: " + this.name + " and Problem: " + this.problem);
+	}
 }
