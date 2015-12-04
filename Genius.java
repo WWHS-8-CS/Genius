@@ -28,7 +28,7 @@ public int lineLength()
 {
         return N;
 }
-public Styring peek()
+public String peek()
 {
         return line[0].toString();
 }
