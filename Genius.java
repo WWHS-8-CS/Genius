@@ -10,7 +10,7 @@ public Genius(int maxLength)//initializes the array to store the queue in and it
 }
 public int findPlace(String name)
 {
-      for(int i = 1; i < line.length; i++)
+      for(int i = 0; i < N; i++)
       {
                 if(line[i].returnName().equals(name))
                         return i;
